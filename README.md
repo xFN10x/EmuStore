@@ -1,1 +1,1 @@
-# EmuStore
+# A Unistore for Emulators.
