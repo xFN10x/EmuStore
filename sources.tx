@@ -1,0 +1,5 @@
+These are where the unistore downloads the emulators from
+
+Snes9x: https://github.com/Xeddius-Network/snes9x_3ds/releases/tag/v1.45
+CIA: https://github.com/Xeddius-Network/snes9x_3ds/releases/download/v1.45/snes9x_3ds.cia
+3dsx: https://github.com/Xeddius-Network/snes9x_3ds/releases/download/v1.45/snes9x_3ds.3dsx
