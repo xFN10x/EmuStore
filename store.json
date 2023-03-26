@@ -59,3 +59,110 @@
       }
    ]
 }
+{
+   "storeInfo":{
+      "title":"EmuStore",
+      "author":"FN10",
+      "description":"A unistore for Emulators.",
+      "file":"emustore.unistore",
+      "url":"https://github.com/xFN10x/EmuStore/releases/download/newest/emustore.unistore",
+      "sheet":"none",
+      "sheetURL":"none",
+      "bg_index":-1,
+      "bg_sheet":0,
+      "version":3,
+      "revision":1
+   },
+   "storeContent":[
+      {
+         "info":{
+            "title":"Snes9x",
+            "author":"Xeddius-Network",
+            "version":"v2.5.1",
+            "category":[
+               "utility"
+            ],
+            "console":[
+               "3DS"
+            ],
+            "description":"A SNES Emulator for the 3DS (Forked from willjow's Snes9x-3ds (thats also forked from matbo87's snes9x-3ds (thats ALSO forked from bubble2k16's snes9x-3ds)))",
+            "license":"",
+            "icon_index":0,
+            "sheet_index":0,
+            "last_updated":"2020-07-02 at 14:03 (UTC)"
+         },
+         "Download SNES9x.3dsx":[
+            {
+               "file":"https://github.com/Xeddius-Network/snes9x_3ds/releases/download/v1.45/snes9x_3ds.3dsx",
+               "message":"Downloading Snes9x.3dsx...",
+               "output":"sdmc:/3ds/Snes9x.3dsx",
+               "type":"downloadFile"
+            }
+         ],
+         "Download SNES9x.cia":[
+            {
+               "file":"https://github.com/Xeddius-Network/snes9x_3ds/releases/download/v1.45/snes9x_3ds.cia",
+               "message":"Downloading Snes9x.cia...",
+               "output":"sdmc:/Snes9x.cia",
+               "type":"downloadFile"
+            },
+            {
+               "file":"/Snes9x.cia",
+               "message":"Installing Snes9x.cia...",
+               "type":"installCia"
+            },
+            {
+               "file":"sdmc:/Snes9x.cia",
+               "message":"Deleting Snes9x.cia.",
+               "type":"deleteFile"
+            }
+         ]
+      },
+      {
+         "info":{
+            "title":"VirtuaNES",
+            "author":"TBirdSoars",
+            "version":"v2.00",
+            "category":[
+               "emulator"
+            ],
+            "console":[
+               "3DS"
+            ],
+            "description":"A NES emulator for the 3DS (forked from bubble2k16/emus3ds)",
+            "license":"",
+            "icon_index":-1,
+            "sheet_index":0,
+            "last_updated":""
+         },
+         "Download VirtuaNES.3dsx":[
+            {
+               "type":"downloadRelease",
+               "repo":"TBirdSoars/VirtuaNES",
+               "file":"virtuanes_3ds.3dsx",
+               "output":"%3DSX%/VirtuaNES.3dsx",
+               "includePrereleases":false
+            }
+         ],
+         "Download VirtuaNES.cia":[
+            {
+               "type":"downloadRelease",
+               "repo":"TBirdSoars/VirtuaNES",
+               "file":"virtuanes_3ds.cia",
+               "output":"sdmc:/VirtuaNES.cia",
+               "includePrereleases":false
+            },
+            {
+               "file":"/VirtuaNES.cia",
+               "message":"Installing VirtuaNES.cia...",
+               "type":"installCia"
+            },
+            {
+               "file":"sdmc:/VirtuaNES.cia",
+               "message":"Deleting VirtuaNES.cia.",
+               "type":"deleteFile"
+            }
+         ]
+      }
+   ]
+}
