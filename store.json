@@ -102,6 +102,56 @@
                "type":"deleteFile"
             }
          ]
+      },
+      {
+         "info":{
+            "title":"GameYoB",
+            "author":"Stewmath",
+            "version":"v0.5.2",
+            "category":[
+               "emulator"
+            ],
+            "console":[
+               "3DS"
+            ],
+            "description":"A GB(C) Emulator for the 3DS",
+            "license":"",
+            "icon_index":-1,
+            "sheet_index":0,
+            "last_updated":""
+         },
+         "Download GameYoB.cia":[
+            {
+               "type":"downloadFile",
+               "file":"https://objects.githubusercontent.com/github-production-release-asset-2e65be/8361958/5ef58b00-06f0-11eb-83b9-dfffadf9fe25?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230327%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230327T133248Z&X-Amz-Expires=300&X-Amz-Signature=6076bd2d4199574e0cd0057f4173cdb3607852598cbf06df6b7c240015115524&X-Amz-SignedHeaders=host&actor_id=89083781&key_id=0&repo_id=8361958&response-content-disposition=attachment%3B%20filename%3Dgameyob.zip&response-content-type=application%2Foctet-stream",
+               "output":"sdmc:/gameyob.zip"
+            },
+            {
+               "type":"mkdir",
+               "directory":"sdmc:/EmuStore/"
+            },
+            {
+               "type":"promptMessage",
+               "message":"This will download the DS versions of GameYoB. Find the .nds versions in sdmc:/EmuStore/GameYoB",
+               "count":0
+            },
+            {
+               "type":"extractFile",
+               "file":"/gameyob.zip",
+               "input":"",
+               "output":"/EmuStore/GameYoB/"
+            },
+            {
+               "type":"promptMessage",
+               "message":"Install DSIWare version?",
+               "count":999
+            },
+            {
+               "file":"/Emustore/GameYoB/gameyob.cia",
+               "message":"Installing VirtuaNES.cia...",
+               "type":"installCia"
+            }
+         ]
       }
    ]
 }
