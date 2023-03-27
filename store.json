@@ -150,6 +150,21 @@
                "file":"/Emustore/GameYoB/gameyob.cia",
                "message":"Installing VirtuaNES.cia...",
                "type":"installCia"
+            },
+            {
+               "type":"promptMessage",
+               "message":"Install NDS Forwarder to install the nds files?",
+               "count":999
+            },
+            {
+               "type":"downloadFile",
+               "file":"https://github.com/MechanicalDragon0687/ndsForwarder/releases/download/1.4.3/ndsForwarder.3dsx",
+               "output":"sdmc:/3ds/ndsForwarder"
+            },
+            {
+               "type":"promptMessage",
+               "message":"Take note, this only installed the 3dxs file. Follow the instrucions here to complete the install: https://db.universal-team.net/3ds/ndsforwarder",
+               "count":1
             }
          ]
       }
