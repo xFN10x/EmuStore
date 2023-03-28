@@ -4,3 +4,7 @@ If you are going to edit the json file then use this to edit it: https://jsonfor
 # How to download the store when a realese is not out
 
 First, download the source code, then take the "store.json" rename it to "emustore.unistore" then put it in sdmc:/3ds/universal-db/stores. 
+
+# What you need 
+[efefd
+{ddd}
